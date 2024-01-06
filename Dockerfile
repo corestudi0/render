@@ -1,5 +1,5 @@
 # 使用 Ubuntu 22.04 作为基础镜像
-FROM ubuntu:22.04
+FROM centos:7.9
 
 # 安装 Shellinabox
 RUN apt-get update && \
