@@ -2,9 +2,9 @@
 FROM centos:7.9.2009
 
 # 安装 Shellinabox
-RUN apt-get update && \
-    apt-get install -y shellinabox && \
-    apt-get clean && \
+RUN yum update && \
+    yum install -y shellinabox && \
+    yum clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # 设置 root 用户的密码为 'root'
